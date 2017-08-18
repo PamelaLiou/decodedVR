@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Our First Foray into WebVR</title> 
+    <meta name="description" content="DECODED VR - A-Frame">
+
+
+    <!-- A-Frame Library -->
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script> <!--  -->
+
+
+  </head>
+  <body>
+
+      <!-- Building our 3D scene -->
+
+    <a-scene>
+
+
+      <a-box position="-1 1 -3" rotation="0 45 0" color="#4C00D9"></a-box>
+
+      <a-cylinder position="5 0.75 -6" radius="0.25" height="10.5" color="#FFFFFF"></a-cylinder>
+      <a-cylinder position="2.5 0.75 -6" radius="0.25" height="10.5" color="#FFFFFF"></a-cylinder>
+      <a-cylinder position="-2.5 0.75 -6" radius="0.25" height="10.5" color="#FFFFFF"></a-cylinder>
+      <a-cylinder position="-5 0.75 -6" radius="0.25" height="10.5" color="#FFFFFF"></a-cylinder>
+
+
+      <a-sphere position="0 2 -5" radius="1.25" color="#FF2D5E">
+      	<a-animation attribute="position" to="0 4 -5" direction="alternate" dur="3000"
+      repeat="indefinite"></a-animation>
+      </a-sphere>
+
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="20" height="10" color="#FF00FF"></a-plane>
+
+      <a-sky color="#0000FF"></a-sky>
+    </a-scene>
+  </body>
+</html>
